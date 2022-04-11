@@ -17,6 +17,11 @@
 		</canvas>
 		<canvas id="ship" width="600" height="360">
 		</canvas>
+        <form class="sub-form" action="/save" method="post">
+            <section><label for="player"><input name="player" type="text" placeholder="Name"></label></section>
+            <section><label for="points"><input name="points" type="number" id="points" readonly></label></section>
+            <button type="submit" id="sendBtn">SEND</button>
+        </form>
         <div class="score">SCORE: <span id="score"></span></div>
 		<div class="game-over" id="game-over">GAME OVER<p><span onclick="game.restart()">Restart</span></p></div>
 		<div class="loading" id="loading">LOADING...<p>Please wait</p></div>
